@@ -1,0 +1,2794 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="/assets/images/favicon.ico" />
+
+
+
+
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Accueil - ECAB Cab Web & Mobile Solutions</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Raleway:400,700" rel="stylesheet">
+    <link href="/assets/frontend/css/all.min.css" rel="stylesheet">
+
+    <link href="/assets/frontend/css/bootstrap-slider.min.css" rel="stylesheet">
+    <link href="/assets/frontend/css/slick.css" rel="stylesheet">
+    <link href="/assets/frontend/css/style.css" rel="stylesheet">
+    <link href="/assets/frontend/css/styles-modified.css" rel="stylesheet">
+    <link href="/assets/frontend/css/custom.css" rel="stylesheet">
+    <link href="/assets/frontend/fonts/hostify.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!--[if lt IE 9]>
+     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+   <![endif]-->
+    <script type="text/javascript">
+        var csrfToken = 'f72628f5fe617d0cdc4802b9fdbc1679321f9c92',
+            markdownGuide = 'Guide de mise en forme',
+            locale = 'en',
+            saved = 'enregistré',
+            saving = 'enregistrement automatique',
+            whmcsBaseUrl = "",
+            requiredText = 'Requis',
+            recaptchaSiteKey = "";
+    </script>
+    <script src="/assets/frontend/js/scripts.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://kenwheeler.github.io/slick/slick/slick-theme.css" />
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <style>
+        @keyframes opacityOn {
+            0% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .mar1 {
+            width: 810px;
+            position: absolute;
+            left: 83px;
+        }
+
+        .choose-language ::after {
+            content: url("/assets/images/flag-french.png");
+            /* with class ModalCarrot ??*/
+            position: relative;
+            /*or absolute*/
+            top: -20px;
+            right: 98px;
+        }
+
+
+        .Modal::after {
+
+            z-index: 100000;
+            /*a number that's more than the modal box*/
+            left: -50px;
+            top: 10px;
+        }
+
+        .choose-language {
+            position: absolute;
+            margin-left: 35px;
+
+        }
+
+        @media (max-width: 992px) {
+            #features-links-holder {
+                margin-top: 70px !important;
+            }
+        }
+
+        #eucookie {
+            background: #cf202b;
+            width: 100%;
+            padding: 6px 0;
+            z-index: 9999;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            padding: 5px;
+        }
+
+        #eucookie div {
+            font-size: 13px;
+            font-weight: 700;
+            text-align: center;
+            color: #fff;
+            width: 100%;
+            margin: 0 auto;
+            line-height: 19px;
+
+        }
+
+        #eucookie a {
+            font-size: 13px;
+            font-weight: 700;
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        #seteucookie {
+            background: linear-gradient(#9fe925, #558407) !important;
+            cursor: pointer;
+            color: #fff;
+            margin: 0px 0 0 10px;
+            border-radius: 15px;
+            text-align: center;
+            text-decoration: none !important;
+        }
+    </style>
+</head>
+
+<body data-phone-cc-input="1" style="overflow-x: hidden">
+    <style>
+        #contact_form {
+            top: 0 !important;
+        }
+    </style>
+    <div class="floating-form defaultRight" id="contact_form" style="border: 1px solid dodgerblue;border-radius: 5px;">
+        <div class="floating-form-2-header">
+            <i class="fa fa-phone"></i> DEMANDE DE DEVIS GRATUIT
+        </div>
+        <div class="contact-opener right-opener" style="top:0px">
+            <img class="con-img" src="/assets/images/QUOTE_REQUEST.gif" alt style="position: fixed;
+    right: 0;
+    z-index: 999;
+    top: 250px;
+    cursor: pointer;
+    width: 75px;
+    transform: translate(0px, -50%);
+    border:2px solid white;
+    border-radius:11px;">
+        </div>
+        <div id="contact_results"></div>
+        <div id="contact_body" class="contact_body">
+            <a href="javascript:;" class="close-btn closee-btn" style="color: #ea0707 !important;">
+                <i class="fa fa-times-circle custom-cross-icon"></i>
+            </a>
+            <div id="client_other1">
+                <form method="post" action="#" enctype="multipart/form-data" accept-charset="utf-8"
+                    id="the-contact-form" class="form">
+                    <input type="hidden" name="token" value="a94a5dcd696e1646a49c76e6ecb5fdb6a6b391ac">
+                    <div style="display:none">
+                        <input type="hidden" name="csrf_test_name" value="1277b8ae6b314b494ff2363af7822d60">
+                    </div>
+                    <input type="hidden" name="success_message"
+                        value="Nous&nbsp;avons&nbsp;bien&nbsp;reçu&nbsp;votre&nbsp;message&nbsp;et&nbsp;nous vous en&nbsp;remercions,&nbsp;un&nbsp;de&nbsp;nos&nbsp;opérateurs&nbsp;reviendra&nbsp;vers&nbsp;vous&nbsp;dés&nbsp;que&nbsp;possible.">
+                    <div class="row">
+                        <div class="col-xs-12" style="background-color: #EBF4FF !important;">
+                            <p class="test">Merci de remplire ce formulaire pour etre rappele par un de nos conseillers
+                                :</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div id="client_login1" style="display: none;">
+                <div class="form-group">
+                    <div class="input-group signupResBtnPopup">
+                        <span class="input-group-addon">
+                            <i class="fa fa-user"></i>
+                        </span>
+                        <input id="c_username1" type="text" class="form-control" value name="username"
+                            placeholder="Username*">
+                    </div>
+                    <small class="pop-error" id="err-c_username1">Username is required*</small>
+                </div>
+                <div class="form-group">
+                    <div class="input-group signupResBtnPopup">
+                        <span class="input-group-addon">
+                            <i class="fa fa-lock"></i>
+                        </span>
+                        <input id="c_password1" type="password" class="form-control password" value name="password"
+                            placeholder="Password*">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default reveal" type="button">
+                                <i class="glyphicon glyphicon-eye-close"></i>
+                            </button>
+                        </span>
+                    </div>
+                    <small class="pop-error" id="err-c_password1">Password is required*</small>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-xs-12">
+                        <div class="col-md-6 col-xs-6">
+                            <div class="form-group" style="margin:0;">
+                                <div class="checkbox resSignupText1" style="margin:0;">
+                                    <label>
+                                        <input type="checkbox"
+                                            style="margin-right: 0; margin-top: 4px; margin-left: -20px; float: none;"
+                                            value="1" name="remember_me3"> Remember me </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xs-6" style="text-align: right;font-size: 11px;">
+                            <a href="#" data-toggle="modal" data-target="#myModal" class="resSignupText"> Mot de passe
+                                oublié?</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-sm-6 col-xs-6" style="text-align: center">
+                        <a href="#" class="button green_button pull-right" onclick="client_login1()">Login</a>
+                    </div>
+                </div>
+            </div>
+            <div id="client_other1" style="display: block;">
+                <div class="row">
+                    <div class="col-xs-12 form-group">
+                        <div class="input-group signupResBtnPopup2" style="width:27%;float:left;margin-right:5px;">
+                            <span class="input-group-addon">
+                                <i class="fa fa-user" style="color:dodgerblue"></i>
+                            </span>
+                            <select class="form-control c_civility" style="color: #000;" name="civility" required>
+                                <option value="Mr">Mr</option>
+                                <option value="Mme">Mme</option>
+                                <option value="Mlle">Mlle</option>
+                            </select>
+                        </div>
+                        <div class="input-group signupResBtnPopup2" style="width:33%;float:left;margin-right:5px;">
+                            <span class="input-group-addon">
+                                <i class="fa fa-user" style="color:dodgerblue"></i>
+                            </span>
+                            <input type="text" maxlength="100" class=" form-control c_firstname" required name="name"
+                                placeholder="Nom*" value>
+                        </div>
+                        <div class="input-group signupResBtnPopup3" style="width:36.5%;float:left">
+                            <span class="input-group-addon">
+                                <i class="fa fa-user" style="color:dodgerblue"></i>
+                            </span>
+                            <input type="text" maxlength="100" class=" form-control c_lastname" required name="prename"
+                                placeholder="Prenom*" value>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class=" form-group">
+                            <div class="input-group signupResBtnPopup">
+                                <span class="input-group-addon" style="padding:6px 10px;">
+                                    <i class="fa fa-home"></i>
+                                </span>
+                                <input id="enterprise2" maxlength="50" type="text" class="form-control c_company"
+                                    name="company" placeholder="Entreprise ou Organisme  (Optionnel)" value>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class=" form-group">
+                            <div class="input-group signupResBtnPopup">
+                                <span class="input-group-addon">
+                                    <i class="fa fa-phone"></i>
+                                </span>
+                                <input id="tel" maxlength="50" type="text" class="form-control c_phone" required
+                                    name="tel" placeholder="Votre Telephone*" value>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class=" form-group">
+                            <div class="input-group signupResBtnPopup">
+                                <span class="input-group-addon" style="padding:6px 10px;">
+                                    <i class="fa fa-envelope"></i>
+                                </span>
+                                <input id="email" maxlength="100" type="email" class="form-control c_email" required
+                                    name="email" placeholder="Votre email*" value>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class=" form-group">
+                            <div class="input-group signupResBtnPopup">
+                                <span class="input-group-addon">
+                                    <i class="fa fa-map-marker"></i>
+                                </span>
+                                <input id="contact_autocomplete" data-parent="the-contact-form" type="text"
+                                    class="form-control c_address pac-target-input" required name="address1"
+                                    placeholder="Addresse du devis*" value autocomplete="off">
+                                <i class="location-icon" onclick="geolocate_model('contact')"></i>
+                                <input type="hidden" name="latitude" value>
+                                <input type="hidden" name="longitude" value>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class=" form-group">
+                            <div class="input-group signupResBtnPopup">
+                                <span class="input-group-addon">
+                                    <i class="fa fa-map-marker"></i>
+                                </span>
+                                <input id="address2" type="text" class="form-control" name="address2"
+                                    placeholder="Complément d'adresse" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 form-group">
+                        <div class="input-group signupResBtnPopup2" style="width:48%;float:left;margin-right:5px;">
+                            <span class="input-group-addon">
+                                <i class="fa fa-map-marker"></i>
+                            </span>
+                            <input type="text" maxlength="20" class="form-control c_zipcode" required name="postal_code"
+                                placeholder="Code Postal*" value>
+                        </div>
+                        <div class="input-group signupResBtnPopup" style="width:50%;float:left">
+                            <span class="input-group-addon">
+                                <i class="fa fa-map-marker"></i>
+                            </span>
+                            <input type="text" class="form-control c_city" required name="ville" placeholder="Ville*"
+                                value>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 form-group">
+                        <div class="input-group signupResBtnPopup2" style="width:48%;float:left;margin-right:5px;">
+                            <span class="input-group-addon" style="padding:6px 8px;">
+                                <i class="fa fa-list"></i>
+                            </span>
+                            <select class="form-control" id="the-contact-form-service-cat" name="service_category">
+                                <option value>Cars</option>
+                                <option value="2">Drivers</option>
+                                <option value="3">Operators</option>
+                            </select>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class=" form-group signupResBtnPopup1">
+                            <textarea rows="7" style="height: 140px" maxlength="3000" class="form-control"
+                                name="message" required
+                                placeholder="Merci de nous indiquez toutes les informations nécessaires afin de vous fournir un devis pour la prestation souhaitée*"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-sm-6 col-xs-6" style="text-align: center">
+                        <input class=" w3-orange orangehs" type="submit" name="save" value="Envoyer"
+                            style="font-family: Calibri;width: 105px;color:#fff;font-weight:bold;background: #13d014 !important;border-radius: 10px !important;">
+                    </div>
+                </div>
+                <p class="fote-text">Nous respectons votre vie privée <a href="#" target="_blank" class="fotter-links">
+                        Politique de Vie Privée </a>et nous vous enverrons jamais de spam. </p>
+            </div>
+        </div>
+    </div>
+    <style>
+        #contact_form2,
+        .showRight {
+            position: absolute !important;
+            left: 0 !important;
+            top: 0 !important;
+            right: 100% !important;
+        }
+    </style>
+    <div class="floating-form-2  currentClass " id="contact_form_2"
+        style="border: 2px solid rgb(47, 176, 231);border: 1px solid dodgerblue;border-radius: 5px;">
+        <div class="contact-opener-2">
+            <img class="demande_cta" src="/assets/images/demande.gif" alt style="display: block;position: fixed;
+    left: 0;
+    z-index: 999;
+    top: 250px;
+    cursor: pointer;
+    width: 75px;
+    transform: translate(0px, -50%);
+    border:2px solid white;
+    border-radius:11px;" />
+        </div>
+        <div class="contact-2-body">
+            <div class="floating-form-3-header">
+                <i class="fa fa-phone"></i> DEMANDE DE RAPPEL
+            </div>
+            <div id="client_other1" class="custom_client_other1">
+                <div class="row">
+                    <div class="col-xs-12" style="background-color: #EBF4FF !important;">
+                        <p class="test">Merci de remplire ce formulaire pour etre rappele par un de nos conseillers :
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="contact_results-2"></div>
+            <div id="contact_body-2" class="custom_contact_body-2">
+                <a href="javascript:;" class="close-btn-2 closee-btn" style="color: #ea0707 !important;">
+                    <i class="fa fa-times-circle custom-cross-icon"></i>
+                </a>
+                <form name="submitticket" method="post" action="#" enctype="multipart/form-data" class="form-stacked">
+                    <input type="hidden" name="token" value="dd72eedec7e8e1255d95ba1a514679ca7a0b9be9" />
+                    <div id="supp_other1">
+                        <div class="row">
+                            <div class="col-xs-12 form-group">
+                                <div class="input-group signupResBtnPopup2"
+                                    style="width:27%;float:left;margin-right:5px;">
+                                    <span class="input-group-addon">
+                                        <i class="fa fa-user" style="color:dodgerblue" style="color:dodgerblue"></i>
+                                    </span>
+                                    <select class="form-control s_civility1" name="civility" required>
+                                        <option value="Mr">Mr</option>
+                                        <option value="Mme">Mme</option>
+                                        <option value="Mlle">Mlle</option>
+                                    </select>
+                                </div>
+                                <div class="input-group signupResBtnPopup2"
+                                    style="width:33%;float:left;margin-right:5px;">
+                                    <span class="input-group-addon">
+                                        <i class="fa fa-user" style="color:dodgerblue"></i>
+                                    </span>
+                                    <input type="text" maxlength="100" class="form-control s_firstname1" required
+                                        name="lastname" placeholder="Nom*" value>
+                                </div>
+                                <div class="input-group signupResBtnPopup3" style="width:36.5%;float:left">
+                                    <span class="input-group-addon">
+                                        <i class="fa fa-user" style="color:dodgerblue"></i>
+                                    </span>
+                                    <input type="text" maxlength="100" class="form-control s_lastname1" required
+                                        name="firstname" placeholder="Prenom*" value>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class=" form-group">
+                                    <div class="input-group signupResBtnPopup">
+                                        <span class="input-group-addon">
+                                            <i class="fa fa-user"></i>
+                                        </span>
+                                        <input id="enterprise" maxlength="50" type="text"
+                                            class="form-control s_company1" name="companyname"
+                                            placeholder="Entreprise ou Organisme (Optionnel)" value>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="form-group">
+                                    <div class="input-group signupResBtnPopup">
+                                        <span class="input-group-addon">
+                                            <i class="fa fa-phone"></i>
+                                        </span>
+                                        <input id="num2" maxlength="50" type="text" class="form-control s_phone1"
+                                            required name placeholder="Votre Telephone*" value>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class=" form-group">
+                                    <div class="input-group signupResBtnPopup">
+                                        <span class="input-group-addon">
+                                            <i class="fa fa-envelope"></i>
+                                        </span>
+                                        <input id="phone-email" maxlength="100" type="email" class="form-control"
+                                            required name="email" placeholder="Votre email*" value>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 form-group">
+                                <div class="input-group signupResBtnPopup">
+                                    <span class="input-group-addon">
+                                        <i class="fa fa-calendar"></i>
+                                    </span>
+                                    <select class="form-control" style="height: 35px;" name="days" required>
+                                        <option value>Jours de Rappel*</option>
+                                        <option value="Tous les jours">Tous les jours</option>
+                                        <option value="Lundi">Lundi</option>
+                                        <option value="Mardi">Mardi</option>
+                                        <option value="Mercredi">Mercredi</option>
+                                        <option value="Jeudi">Jeudi</option>
+                                        <option value="Vendredi">Vendredi</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 form-group">
+                                <div class="input-group signupResBtnPopup2">
+                                    <span class="input-group-addon normal-addon">DE</span>
+                                    <select class="form-control" name="from_time" required>
+                                        <option value="00">00</option>
+                                        <option value="01">01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                        <option value="04">04</option>
+                                        <option value="05">05</option>
+                                        <option value="06">06</option>
+                                        <option value="07">07</option>
+                                        <option value="08">08</option>
+                                        <option value="09">09</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                    </select>
+                                    <span class="input-group-addon normal-addon"
+                                        style="border: 0; background: #f2f2f2; padding: 6px 0">H</span>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 form-group">
+                                <div class="input-group signupResBtnPopup2">
+                                    <span class="input-group-addon normal-addon">A</span>
+                                    <select class="form-control" name="to_time" required>
+                                        <option value="00">00</option>
+                                        <option value="01">01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                        <option value="04">04</option>
+                                        <option value="05">05</option>
+                                        <option value="06">06</option>
+                                        <option value="07">07</option>
+                                        <option value="08">08</option>
+                                        <option value="09">09</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                    </select>
+                                    <span class="input-group-addon normal-addon"
+                                        style="border: 0; background: #f2f2f2; padding: 6px 0">H</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class=" form-group">
+                                    <div class="input-group signupResBtnPopup">
+                                        <span class="input-group-addon">
+                                            <i class="fa fa-map-marker"></i>
+                                        </span>
+                                        <select class="form-control" name="urgency" required="required">
+                                            <option value="Priorite" selected>Priorite</option>
+                                            <option value="High">Haute</option>
+                                            <option value="Medium">Moyenne</option>
+                                            <option value="Low">Faible</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class=" form-group">
+                                    <div class="input-group signupResBtnPopup">
+                                        <span class="input-group-addon">
+                                            <i class="fa fa-building"></i>
+                                        </span>
+                                        <select style="width: 100%;" class="form-control" name="deptid" id="department">
+                                            <option value="2" selected="selected">Demande de Devis </option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class=" form-group signupResBtnPopup1">
+                                    <textarea name="message" id rows="3" class="col-md-12 messs"
+                                        placeholder="Message"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-12">
+                                <label class="control-label " for="attachments">Pièce(s) jointe(s):</label>
+                                <div class="controls col-md-12">
+                                    <input class="form-control" type="file" name="attachments[]" />
+                                    <div id="fileuploads"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12" style="text-align: center;">
+                                <p align="center" style="display:none">
+                                    <img src="#" align="middle" style="height: 32px;" />
+                                    <input type="text" name="code" size="6" maxlength="5" class="input-small"
+                                        style="height: 29px;" />
+                                </p>
+                                <input class type="submit" name="save" value="Envoyer"
+                                    style="font-family: Calibri;width: 105px;color:#fff;font-weight:bold;background: #13d014 !important;border-radius: 10px !important;" />
+                            </div>
+                        </div>
+                    </div>
+                    <p class="fote-text">Nous respectons votre vie privée <a href="#" target="_blank"
+                            class="fotter-links"> Politique de Vie Privée </a>et nous vous enverrons jamais de spam.
+                    </p>
+            </div>
+            </form>
+        </div>
+    </div>
+    </div>
+    <div class="hero-section-container">
+        <div id="header-holder" class="main-header">
+            <div class="bg-animation">
+                <div class="graphic-show">
+                </div>
+            </div>
+            <style>
+                .custom-top-menu-row {
+                    padding-left: 4.5rem;
+                    padding-right: 4.4rem;
+                }
+
+                .custom-padding-right-0 {
+                    padding-right: 0;
+                }
+
+                .removeFocus1 {
+                    border-radius: 5px !important;
+                }
+            </style>
+            <div class="container container-fluid" id="header">
+                <div class="row custom-top-menu-row">
+                    <div style="padding:0" class="col-md-7">
+                        <div id="main-menu">
+                            <nav id="nav" class="container-fluid navbar navbar-default navbar-main" role="navigation">
+
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                        data-target="#primary-nav">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+
+                                <div style="padding: 0" class="collapse navbar-collapse" id="primary-nav">
+                                    <ul class="nav navbar-nav">
+                                        <li menuitemname="1235" class id="Primary_Navbar-1235">
+                                            <a href="/affiliation">
+                                                <i class="fas fa-users"></i>&nbsp; Affiliation
+                                            </a>
+                                        </li>
+                                        <li menuitemname="133" class id="Primary_Navbar-133">
+                                            <a href="/announcements">
+                                                <i class="fas fa-bullhorn"></i>&nbsp; Announcements
+                                            </a>
+                                        </li>
+                                        <li menuitemname="133" class id="Primary_Navbar-133">
+                                            <a href="/jobs">
+                                                <i class="fas fa-bullhorn"></i>&nbsp; Jobs
+                                            </a>
+                                        </li>
+
+                                        <li menuitemname="185" class id="Primary_Navbar-185">
+                                            <a href="/maintenance">
+                                                <i class="fas fa-rocket fa-fw"></i> Maintenance
+                                            </a>
+                                        </li>
+
+
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-md-5 custom-padding-right-0">
+                        <ul class="top-nav">
+
+                            <li class="support-button-holder trans support-dropdown demo-button"
+                                id="Primary_Navbar-Contact_Us demo button">
+                                <form method="post" action="cart.php">
+                                    <input type="hidden" name="token" value="f72628f5fe617d0cdc4802b9fdbc1679321f9c92">
+                                    <select name="currency" onchange="submit()" class="form-control form-control-m"
+                                        style="color : #ffff !important; border : none !important;">
+                                        <option style="color:black" value="2">EURO</option>
+                                        <option style="color:black" value="1">USD</option>
+                                    </select>
+                                </form>
+                            </li>
+                            <li>
+                                <a href="#" class="choose-language" data-toggle="popover" id="languageChooser"
+                                    data-original-title title>
+                                    Français
+                                    <b class="caret"></b>
+                                </a>
+                                <div id="languageChooserContent" class="hidden">
+                                    <ul>
+                                        <li>
+                                            <a href="/?language=arabic">العربية</a>
+                                        </li>
+                                        <li>
+                                            <a href="/?language=azerbaijani">Azerbaijani</a>
+                                        </li>
+                                        <li>
+                                            <a href="/?language=catalan">Català</a>
+                                        </li>
+                                        <li>
+                                            <a href="/?language=chinese">中文</a>
+                                        </li>
+                                        <li>
+                                            <a href="/?language=croatian">Hrvatski</a>
+                                        </li>
+                                        <li>
+                                            <a href="/?language=czech">Čeština</a>
+                                        </li>
+                                        <li>
+                                            <a href="/?language=danish">Dansk</a>
+                                        </li>
+                                        <li>
+                                            <a href="/?language=dutch">Nederlands</a>
+                                        </li>
+                                        <li>
+                                            <a href="/?language=english">English</a>
+                                        </li>
+                                        <li>
+                                            <a href="/?language=estonian">Estonian</a>
+                                        </li>
+                                        <li>
+                                            <a href="/?language=farsi">Persian</a>
+                                        </li>
+                                        <li>
+                                            <a href="/?language=french">Français</a>
+                                        </li>
+                                        <li>
+                                            <a href="/?language=german">Deutsch</a>
+                                        </li>
+                                        <li>
+                                            <a href="/?language=hebrew">עברית</a>
+                                        </li>
+                                        <li>
+                                            <a href="/?language=hungarian">Magyar</a>
+                                        </li>
+                                        <li>
+                                            <a href="/?language=italian">Italiano</a>
+                                        </li>
+                                        <li>
+                                            <a href="/?language=macedonian">Macedonian</a>
+                                        </li>
+                                        <li>
+                                            <a href="/?language=norwegian">Norwegian</a>
+                                        </li>
+                                        <li>
+                                            <a href="/?language=portuguese-br">Português</a>
+                                        </li>
+                                        <li>
+                                            <a href="/?language=portuguese-pt">Português</a>
+                                        </li>
+                                        <li>
+                                            <a href="/?language=romanian">Română</a>
+                                        </li>
+                                        <li>
+                                            <a href="/?language=russian">Русский</a>
+                                        </li>
+                                        <li>
+                                            <a href="/?language=spanish">Español</a>
+                                        </li>
+                                        <li>
+                                            <a href="/?language=swedish">Svenska</a>
+                                        </li>
+                                        <li>
+                                            <a href="/?language=turkish">Türkçe</a>
+                                        </li>
+                                        <li>
+                                            <a href="/?language=ukranian">Українська</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li style="border: 2px solid #fff;" menuitemname="943" class=" removeFocus1"
+                                id="Secondary_Navbar-943">
+                                <a href="https://ecab.live/client/login.php">
+                                    Accés Client
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <style>
+                /* Navbar */
+
+                ul.top-nav2>li:not(li.custom-menu-logo, li.custom-info-line-parent) {
+                    margin-left: 12px;
+                }
+
+                ul.top-nav2>li>a {
+                    margin-left: 0;
+                }
+
+                ul.top-nav2>li.active-custom-menu-item {
+                    /*border: 2px solid #fff;*/
+                    border-radius: 10px;
+                    /*background: pink !important;*/
+                    text-align: center;
+                    background-color: #ff0707 !important;
+                    border: 2px solid #fff !important;
+                    border-radius: 10px !important;
+                }
+
+                /* Other */
+                .custom-info-line {
+                    right: 273px;
+                    position: relative;
+                    top: -50px;
+                    z-index: 0;
+                }
+
+                .custom-info-line>span {
+                    color: #fff;
+                    font-size: 20px;
+                    font-weight: bold;
+                    margin-right: 7px;
+                }
+
+                .custom-info-line>img {
+                    width: 175px !important;
+                    height: 45px;
+                }
+
+                .custom-dollar-icon {
+                    background: white;
+                    color: #0080ff;
+                    border-radius: 50%;
+                    padding: 0.3rem 0.5rem;
+                }
+
+                /* .custom-question-mark-parent:hover{
+        color: #fff !important;
+    }
+
+    .custom-question-mark-parent:focus{
+        color: #fff !important;
+    } */
+
+                /* .custom-question-mark-parent:hover span{
+        color: rgba(255, 255, 255, 0.69);
+    }
+
+    .custom-question-mark-parent:focus span{
+        color: rgba(255, 255, 255, 0.69);
+    } */
+
+                .custom-question-mark-icon {
+                    background: #0080ff;
+                    border-radius: 50%;
+                }
+
+
+                .breadcrumb>li+li:before {
+
+                    content: ">" !important;
+                }
+            </style>
+            <div class="container-fluid">
+                <div class="container" id="header" style="position: relative">
+                    <div class="row">
+                        <div style="margin-top: 10px" class="col-md-12">
+                            <ul style="float:left" ; class="top-nav top-nav2">
+                                <li class="custom-menu-logo">
+                                    <a href="/"><img
+                                            style="width: 180px;height: 120px;position: relative;left: 0px;top: -30px;"
+                                            src="/assets/images/logo_footer.png"></a>
+                                </li>
+                                <li menuitemname="1" class="active-custom-menu-item" id="Primary_Navbar-1" style>
+                                    <a href="" style="border-radius: 8px;">
+                                        <i class="fas fa-home"></i>&nbsp; Accueil
+                                    </a>
+                                </li>
+                                <li menuitemname="1239" class id="Primary_Navbar-1239">
+                                    <a href="/features">
+                                        <i class="fas fa-cogs"></i>&nbsp; Features
+                                    </a>
+                                </li>
+                                <li class>
+                                    <a style="font-weight: bold;" href="/demo">
+                                        <i class="fa fa-desktop"></i>
+                                        Demo
+                                    </a>
+                                </li>
+                                <li class>
+                                    <a style="font-weight: bold;" href="/prices">
+                                        <i class="fas fa-usd custom-dollar-icon"></i>
+                                        Prices
+                                    </a>
+                                </li>
+                                <li menuitemname="1231" class id="Primary_Navbar-1231">
+                                    <a href="/documentation">
+                                        <i class="fas fa-download fa-fw"></i>&nbsp; Documentation
+                                    </a>
+                                </li>
+                                <li menuitemname="159" class id="Primary_Navbar-159">
+                                    <a href="/faq" class="custom-question-mark-parent">
+                                        <i class="fa fa-question-circle custom-question-mark-icon"></i>
+                                        <span style="font-weight: bold">FAQ</span>
+                                    </a>
+                                </li>
+                                <li menuitemname="211" class id="Primary_Navbar-211" style>
+                                    <a href="/contact" class="custom-question-mark-parent">
+                                        <i class="fa fa-envelope custom-envelope-icon"></i>
+                                        <span style="font-weight:bold">Contact</span>
+                                    </a>
+                                </li>
+                                <li class="custom-info-line-parent">
+                                    <div class="custom-info-line">
+                                        <span>Info Line</span>
+                                        <img src="/assets/images/phone3.png" alt="info_img">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a style="background-color: #ff0707;color: white;padding: 5px 10px;font-size: 14px;border:2px solid;border-radius: 22px;position: absolute;right: 120px;bottom: 5px;z-index: 99999;"
+                        href="/prices">
+                        <span
+                            style="opacity: 0; animation: opacityOn 1.2s ease-in-out forwards infinite; animation-delay: 1s;font-weight: bold; padding-left: 0.5rem; padding-right: 0.5rem;">J'en
+                            Profite</span>
+                    </a>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div style="padding:0;margin-top: -39px" class="col-md-12">
+                        <div
+                            style="text-align: center;background:#13d014;color:#fff;font-weight: bold;font-size: 20px;padding-top:2px;border-bottom: 1px solid;border-top:1px solid;">
+                            <span class="marquee-child">
+                                <div class="row"
+                                    style="padding-left: 22rem; padding-right: 17rem; height: 3.5rem; display:flex">
+                                    <div class="col-md-1" style="margin-right:22px"></div>
+                                    <a href="/jobs"><span class="col-md-2"
+                                            style="width: 150px;background: linear-gradient(to bottom, #44c0e5 0%, #35add1 39%, #0d85a8 100%) !important; color: white;padding: 4px;border-radius: 19px;border: 2px solid;"><i
+                                                class="far fa-newspaper"></i>&nbsp; Annonce</span></a>
+                                    <div class="col-md-8 marquee-block">
+                                        <marquee behavior direction="left"
+                                            style="position: relative; left: 0; width: 100%">
+                                            <span style="font-weight: bold;">OFFRE SPECIALE et LIMITEE -20% sur toutes
+                                                les versions de ECAB®</span>
+                                        </marquee>
+                                    </div>
+                                    <div class="text-right" style="padding-right: 2.8rem;">
+                                    </div>
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <style>
+                ul.custom-logo-bar-icons>li {
+                    margin-right: 1.5rem;
+                }
+
+                div.custom-cardBoarder {
+                    text-align: center;
+                }
+
+                div.custom-cardBoarder>img {
+                    width: 50%;
+                }
+
+                div.custom-cardBoarder h4.card-title {
+                    font-weight: bold;
+                    color: #2A4968;
+                }
+
+                div.custom-tabs-area-img-row {
+                    height: 87px;
+                    overflow-y: hidden;
+                }
+            </style>
+            <div id="top-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="main-slider">
+                                <div class="slide">
+                                    <div class="spacer"></div>
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <img style="width: 480px; height: 300px;margin-top: 10px;"
+                                                class="img-fluid my-3 rounded title-img" src="/assets/images/admin.png"
+                                                alt="laptop">
+                                            <ul class="logo-bar custom-logo-bar-icons">
+                                                <li><img class="logo-bar-img" src="/assets/images/les-echos.png" alt />
+                                                </li>
+                                                <li><img class="logo-bar-img" src="/assets/images/bfm.png" alt /></li>
+                                                <li><img style="width:130px;margin-top: 15px;" class="logo-bar-img"
+                                                        src="/assets/images/android.png" alt /></li>
+                                                <li><img style="width: 130px;margin-top: 15px;" class="logo-bar-img"
+                                                        src="/assets/images/ios.png" alt /></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="big-title animate-typing" data-animate-loop="true"
+                                                data-type-speed="100" data-cursor-speed="200">ECAB&reg; est la Solution
+                                                <span>"tout en un"</span> <span>La plus avancée </span><br>de gestion
+                                                des sociétés de transport de personnes.
+                                            </div>
+                                            <p style="color:white;font-weight:bold;width: 110%">Une solution Web et
+                                                mobile tout-en-un pour gérer votre société de transport de personnes de
+                                                A à Z, vos clients, vos voitures, vos chauffeurs, vos partenaires, vos
+                                                demandeurs d'emploi et vos affiliés, mais aussi vos réservations, vos
+                                                devis et votre facturation, le tout en un seul endroit.</p>
+                                            <a style="border: 1px solid" href="/prices"
+                                                class="ybtn ybtn-header-color">COMMENCER MAINTENANT</a>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img style="width: 285px; height: 390px;"
+                                                class="img-fluid my-3 rounded title-img"
+                                                src="/assets/images/standing-boy.png" alt="laptop">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs-area-img">
+                    <div class="container">
+                        <div class="row custom-tabs-area-img-row">
+                            <div class="col-md-4 custom_mytitle">
+                                <div class="custom_quality_title_bar">
+                                    <h2 style="margin-bottom: 2rem;">Nos Engagement</h2>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <ul class="logo-bar ">
+                                    <li>
+                                        <div class="card cardBoarder custom-cardBoarder">
+                                            <img class="card-img-top" src="/assets/images/new-partner1.png"
+                                                alt="Card image">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Sans Engagement</h4>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="card cardBoarder custom-cardBoarder">
+                                            <img class="card-img-top" src="/assets/images/new-partner21.png"
+                                                alt="Card image">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Support Client</h4>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="card cardBoarder custom-cardBoarder">
+                                            <img class="card-img-top" src="/assets/images/new-partner31.png"
+                                                alt="Card image">
+                                            <div class="card-body">
+                                                <h4 class="card-title">100% en ligne</h4>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="card cardBoarder custom-cardBoarder">
+                                            <img class="card-img-top" src="/assets/images/new-partner41.png"
+                                                alt="Card image">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Intuitive</h4>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="card cardBoarder custom-cardBoarder">
+                                            <img class="card-img-top" src="/assets/images/new-partner51.png"
+                                                alt="Card image">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Solution tout en un</h4>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        .slick-prev:before,
+        .slick-next:before {
+            color: #C1C1C1;
+        }
+
+        .slick-prev:before {
+            content: '←';
+        }
+
+        .slick-prev:before,
+        .slick-next:before {
+            font-family: 'slick';
+            font-size: 20px;
+            line-height: 1;
+            opacity: .75;
+            color: white;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .slick-prev:before,
+        .slick-next:before {
+            color: #C1C1C1;
+        }
+
+        .partner-block .slick-slide img {
+            display: block;
+            margin: 0 auto;
+        }
+
+        .partner-block {
+            background: transparent linear-gradient(#fbfbfb, #ececec, #cecece) repeat scroll 0 0;
+            float: left;
+            width: 100%;
+        }
+
+        .col-md-6 {
+            color: #000;
+        }
+
+        /* Top Testimonials CSS */
+
+        :not(#fancybox-lock) {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        .quality_container h2 {
+            font-size: 25px;
+        }
+
+        .quality_container .title_bar {
+            color: #fff !important;
+            /* width: 97%; */
+            padding-right: 20px;
+            background: linear-gradient(to bottom,
+                    #44c0e5 0%,
+                    #35add1 39%,
+                    #0d85a8 100%) !important;
+            border-top-left-radius: 9px;
+            border-bottom-left-radius: 9px;
+            padding-left: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            height: 85px;
+        }
+
+        .quality_container .title_bar::before {
+            position: absolute;
+            display: block;
+            background: url('assets/images/triangle.png') no-repeat;
+            z-index: 10;
+            top: 0px;
+            content: "";
+            width: 20px;
+            height: 85px;
+            float: right;
+            right: -20px;
+        }
+
+        .quality_container .mytitle {
+            width: 390px;
+        }
+
+        @media (max-width: 991px) {
+            .quality_container .mytitle {
+                width: 100%;
+                margin-right: 28px;
+            }
+        }
+
+        #testimonials_section {
+            background: transparent linear-gradient(#fbfbfb, #ececec, #cecece) repeat scroll 0 0;
+        }
+
+        #testimonials_section p,
+        #testimonials_section span>strong {
+            font-size: 16px;
+            line-height: 1.6em;
+        }
+
+        #testimonials_section .container {
+            margin: 0 auto;
+        }
+
+        .testimonials_container {
+            padding: 10px;
+        }
+
+        @media (max-width: 990px) {
+            .testimonials_container {
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 1200px) {
+            .flexme {
+                display: flex;
+            }
+        }
+
+        @media (max-width: 990px) {
+            .flexme {
+                display: block;
+            }
+        }
+
+        .testimonials_container .title_bar {
+            color: #fff;
+            width: 280px;
+            padding-right: 20px;
+            background: linear-gradient(to bottom,
+                    #44c0e5 0%,
+                    #35add1 39%,
+                    #0d85a8 100%) !important;
+            display: inline-block;
+            border-top-left-radius: 9px;
+            border-bottom-left-radius: 9px;
+            padding-left: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            height: 85px;
+        }
+
+        .testimonials_container .title_bar h2 {
+            font-size: 22px;
+            font-weight: 400;
+        }
+
+        .testimonials_container .title_bar::before {
+            position: absolute;
+            display: block;
+            background: url(../images/triangle.png) no-repeat;
+            z-index: 10;
+            top: 0px;
+            content: "";
+            width: 20px;
+            height: 85px;
+            float: right;
+            right: -20px;
+        }
+
+        .testimonials_container .client-testimonial-box {
+            display: none;
+            gap: 20px;
+            width: 100%;
+            font-size: 14px;
+            opacity: 0;
+            transition: all 0.3s;
+        }
+
+        .testimonials_container .client-testimonial-box.active {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            opacity: 1;
+        }
+
+        .testimonials_container .client-testimonial-box img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+        }
+
+        .testimonials_container .client-testimonial-box p {
+            margin: 0;
+        }
+
+        .testimonials_container .client-testimonial-box .stars {
+            height: 30px;
+            width: 120px;
+        }
+
+        #testimonials_section .row {
+            position: relative;
+        }
+
+        #testimonials_section .dots {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            bottom: 21px;
+            left: 45%;
+            gap: 5px;
+        }
+
+        @media (max-width: 480px) {
+            #testimonials_section .dots {
+                display: none;
+            }
+        }
+
+        #testimonials_section .dot {
+            height: 15px;
+            width: 15px;
+            cursor: pointer;
+            border-radius: 50%;
+            background-color: #0091d1;
+            opacity: 0.5;
+        }
+
+        #testimonials_section .dot.active {
+            /*background: linear-gradient(#9fe925, #558407) !important;*/
+            background-color: red;
+            opacity: 100%;
+        }
+
+        /*Footer side testimonial css*/
+
+        .testmonialBlock .element {
+            height: 100px;
+            width: 100px;
+            background-color: #000;
+            color: #fff;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 0px 10px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            font-size: 20px;
+        }
+
+        .testmonialBlock .slick-disabled {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .authotName {
+            font-weight: bold;
+            font-size: 13px;
+        }
+
+        /* .footerCarusol{
+            border: 2px solid #005997;
+            border-radius: 15px;
+        } */
+    </style>
+
+    <section id="testimonials_section">
+        <div class="container">
+            <div class="row" style="padding: 5px 0">
+                <div class="quality_container flexme">
+                    <div class="col-md-4 mytitle">
+                        <div class="title_bar">
+                            <h2 style="color: #fff; font-weight: bold; font-size: 19px; margin-top: 10px;">TÉMOIGNAGES
+                                DE NOS CLIENTS</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-8 testimonials_container">
+                        <div class="col-md-8 client-testimonial-box client-testimonial-box-1 active" data-value="1">
+                            <img src="/assets/images/person1.png" alt srcset />
+                            <div class>
+                                <p>
+                                    Trés bon service, voiture confortable, chauffeur agréable
+                                    ....je recommande ;)
+                                </p>
+                                <span><strong>Fabrice P.</strong></span>
+                                <img class="stars" src="/assets/images/five_star-removebg-preview.png" alt srcset />
+                            </div>
+                        </div>
+                        <div class="col-md-8 client-testimonial-box client-testimonial-box-2" data-value="2">
+                            <img src="/assets/images/person2.png" alt srcset />
+                            <div class>
+                                <p>
+                                    Support Client trés arrangeant et sympa.....service au
+                                    top,
+                                </p>
+                                <span><strong>Lea .S</strong></span>
+                                <img class="stars" src="/assets/images/five_star-removebg-preview.png" alt srcset />
+                            </div>
+                        </div>
+                        <div class="col-md-8 client-testimonial-box client-testimonial-box-3" data-value="3">
+                            <img src="/assets/images/person3.png" alt srcset />
+                            <div class>
+                                <p>à l'heure, tarif correcte , et chauffeur souriant....</p>
+                                <span><strong>Marie L .</strong></span>
+                                <img class="stars" src="/assets/images/five_star-removebg-preview.png" alt srcset />
+                            </div>
+                        </div>
+                        <div class="dots" style="top:25px; height: 90px;">
+                            <div class="dot dot-1 active" data-value="1" style="background-color:red"></div>
+                            <div class="dot dot-2" style="background-color:red" data-value="2"></div>
+                            <div class="dot dot-3" style="background-color:red" data-value="3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="services" class="container-fluid pt-2" style="padding-top: 10px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row-title"> Fonctionnalités</div>
+                    <div class="row-subtitle">Gérez votre société de transport en toute tranquillité !</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <div style="padding-bottom: 15px" class="service-box">
+                        <div class="service-icon">
+                            <img src="/assets/images/service-icon1.svg" alt>
+                        </div>
+                        <div class="service-title"><a href="#">Gestion de vos équipes</a></div>
+                        <div class="service-details">
+                            <p>La solution ECAB® prend en charge la gestion de l’ensemble de vos chauffeurs. Vous pouvez
+                                retrouver toutes les informations nécessaires sur vos employés en un instant depuis le
+                                même écran de contrôle.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <img src="/assets/images/service-icon2.svg" alt>
+                        </div>
+                        <div class="service-title"><a href="#">Gestion de vos réservations</a></div>
+                        <div class="service-details">
+                            <p>Gardez l’esprit tranquille sur les réservations de vos clients ! ECAB® se charge de tout.
+                                Vous pourrez piloter toutes les courses grâce à notre logiciel. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <img src="/assets/images/service-icon3.svg" alt>
+                        </div>
+                        <div class="service-title"><a href="#">Gestion de vos factures</a></div>
+                        <div class="service-details">
+                            <p>ECAB® s’occupe de toutes vos factures pour vous permettre de souffler et de vous
+                                concentrer sur d’autres aspects de votre activité.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="service-box">
+                        <div class="service-icon">
+                            <img src="/assets/images/service-icon4.svg" alt>
+                        </div>
+                        <div class="service-title"><a href="#">Planification</a></div>
+                        <div class="service-details">
+                            <p>ECAB® vous aide dans toutes vos tâches de planification. Vous serez ainsi beaucoup plus
+                                organisé dans votre travail au quotidien.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-12 text-center" style="margin-top: 3rem;">
+            <a href="/features" class="btn btn-primary">EN SAVOIR PLUS</a>
+        </div>
+    </div>
+    <div id="message1" class="container-fluid message-area">
+        <div class="bg-color"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-12">
+                    <div class="buttons-holder" style="display: flex; justify-content: center;">
+                        <a href="/features" style="color:black !important;">
+                            <h4>Êtes-vous prêt ?</h4>
+                        </a>
+                        <a href="/contact" class="ybtn ybtn-accent-color ybtn-header-color contact_us">COMMENCER
+                            MAINTENANT</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="features" class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="row-title">Pourquoi nous choisir ?</div>
+                    <div class="row-subtitle"></div>
+                </div>
+            </div>
+            <div class="row rtl-cols">
+                <div class="col-sm-12 col-md-6">
+                    <div id="features-links-holder">
+                        <div class="icons-axis">
+                            <img src="/assets/images/logo_footer.png" alt>
+                        </div>
+                        <div class="feature-icon-holder feature-icon-holder1 opened" data-id="1">
+                            <div class="animation-holder">
+                                <div class="special-gradiant"></div>
+                            </div>
+                            <div class="feature-icon">
+                                <img src="/assets/images/new-partner1-removebg.png" alt width="65">
+                            </div>
+                            <div style="top: 3px;" class="feature-title">Sans Engagement</div>
+                        </div>
+                        <div class="feature-icon-holder feature-icon-holder2" data-id="2">
+                            <div class="animation-holder">
+                                <div class="special-gradiant"></div>
+                            </div>
+                            <div class="feature-icon">
+                                <img src="/assets/images/new-partner2-removebg.png" alt width="75">
+                            </div>
+                            <div class="feature-title">Support Client</div>
+                        </div>
+                        <div class="feature-icon-holder feature-icon-holder3" data-id="3">
+                            <div class="animation-holder">
+                                <div class="special-gradiant"></div>
+                            </div>
+                            <div class="feature-icon">
+                                <img src="/assets/images/new-partner3-removebg.png" alt width="75">
+                            </div>
+                            <div class="feature-title">100% en ligne</div>
+                        </div>
+                        <div class="feature-icon-holder feature-icon-holder4" data-id="4">
+                            <div class="animation-holder">
+                                <div class="special-gradiant"></div>
+                            </div>
+                            <div class="feature-icon">
+                                <img src="/assets/images/new-partner41-removebg.png" alt width="75">
+                            </div>
+                            <div class="feature-title">Intuitive</div>
+                        </div>
+                        <div class="feature-icon-holder feature-icon-holder5" data-id="5">
+                            <div class="animation-holder">
+                                <div class="special-gradiant"></div>
+                            </div>
+                            <div class="feature-icon">
+                                <img src="/assets/images/new-partner5-removebg.png" alt width="75">
+                            </div>
+                            <div style="top: 40px;" class="feature-title">Solution tout en un</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div id="features-holder">
+                        <div class="feature-box feature-d1 show-details">
+                            <div class="feature-title-holder">
+                                <span class="feature-icon">
+                                    <img src="/assets/images/new-partner1-removebg.png" alt width="90">
+                                </span>
+                                <span class="feature-title">Sans Engagement</span>
+                            </div>
+                            <div class="feature-details">
+                                <p>Notre solution ECAB® est très simple d’utilisation, même pour les personnes peu
+                                    habituées à l’informatique ou aux applications en ligne. Tout se fait en quelques
+                                    clics seulement. </p>
+                            </div>
+                        </div>
+                        <div class="feature-box feature-d2">
+                            <div class="feature-title-holder">
+                                <span class="feature-icon">
+                                    <img src="/assets/images/new-partner2-removebg.png" alt width="90">
+                                </span>
+                                <span class="feature-title">100% en ligne</span>
+                            </div>
+                            <div class="feature-details">
+                                <p>Le logiciel ECAB® a été entièrement pensé et conçu pour les sociétés de transport.
+                                    Nous prenons en compte toutes vos problématiques pour faciliter votre quotidien et
+                                    vous faire gagner du temps dans vos tâches quotidiennes.</p>
+                            </div>
+                        </div>
+                        <div class="feature-box feature-d3">
+                            <div class="feature-title-holder">
+                                <span class="feature-icon">
+                                    <img src="/assets/images/new-partner3-removebg.png" alt width="90">
+                                </span>
+                                <span class="feature-title">Solution tout en un</span>
+                            </div>
+                            <div class="feature-details">
+                                <p>Gérez l’intégralité de votre entreprise depuis un seul logiciel sans avoir à y passer
+                                    tout votre temps. Utilisez toutes les fonctionnalités pour effectuer vos tâches
+                                    quotidiennes, même les plus chronophages !</p>
+                            </div>
+                        </div>
+                        <div class="feature-box feature-d4">
+                            <div class="feature-title-holder">
+                                <span class="feature-icon">
+                                    <img src="/assets/images/new-partner41-removebg.png" alt width="90">
+                                </span>
+                                <span class="feature-title">Intuitive</span>
+                            </div>
+                            <div class="feature-details">
+                                <p>Notre logiciel a subi de nombreux tests avant que nous le mettions en ligne. Il est
+                                    100 % fiable et répond à tous les besoins des sociétés de transport.</p>
+                            </div>
+                        </div>
+                        <div class="feature-box feature-d5">
+                            <div class="feature-title-holder">
+                                <span class="feature-icon">
+                                    <img src="/assets/images/new-partner5-removebg.png" alt width="90">
+                                </span>
+                                <span class="feature-title">Solution tout en un</span>
+                            </div>
+                            <div class="feature-details">
+                                <p>Bénéficiez d’un support technique réactif et à votre écoute si vous avez la moindre
+                                    question sur le logiciel ou son fonctionnement.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="message1" class="container-fluid message-area2">
+            <div class="bg-color"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-12" style="display: flex; justify-content:center">
+                        <div class="buttons-holder">
+                            <a href="/demo" class style="color:black !important;">
+                                <h4>Êtes-vous prêt ?</h4>
+                            </a>
+                            <a href="/contact" class="ybtn ybtn-accent-color ybtn-header-color contact_us">COMMENCER
+                                MAINTENANT</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="testimonial-block">
+        <div class="wrapper">
+            <h3 style="color: #000000;" class="text-center color-blue">Témoignages</h3>
+            <p class="pad_bottom15 text-center">Ce que les autres ont dit de nous ?</p>
+            <div id="testmonialBlock" class="testmonialBlock">
+                <div class="testimonial_lt">
+                    <div class="text1">
+                        <span>Nous perdions beaucoup de temps dans la gestion du personnel et de la comptabilité de
+                            notre société de transport scolaire. Je remercie donc ECAB® qui nous a permis de gagner du
+                            temps et de pallier aux absences de nos collègues plus facilement.</span>
+                        <div class="icon-div"
+                            style="position: relative; height: 0; width: 100%; padding: 0; padding-bottom: 60px;">
+                            <img class="icon-img" src="/assets/images/five_star.png">
+                        </div>
+                    </div>
+                    <div class="namebox"> <img alt src="/assets/images/person2.png" style="width:100px;">
+                        <div class="name">
+                            <h5 class="authorName">Mme Sophie Lambert,</h5>
+                            <p>Directrice générale de société de transport scolaire</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="testimonial_lt">
+                    <div class="text1">
+                        <span>Nous étions débordés et en manque de personnel pendant de longs mois avant de découvrir le
+                            logiciel ECAB®. Un grand merci à toute l’équipe qui a su nous accompagner dans la prise en
+                            main de cet outil qui a changé notre activité !</span>
+                        <div class="icon-div"
+                            style="position: relative; height: 0; width: 100%; padding: 0; padding-bottom: 60px;">
+                            <img class="icon-img" src="/assets/images/five_star.png">
+                        </div>
+                    </div>
+                    <div class="namebox"> <img alt src="/assets/images/person3.png" style="width:100px;">
+                        <div class="name">
+                            <h5 class="authorName">Mme Julie Frenandez,</h5>
+                            <p>Présidente de société de transport handicapé</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="testimonial_lt">
+                    <div class="text1">
+                        <span>Mon métier est une véritable passion pour moi, mais je ne suis pas expert dans la
+                            comptabilité ou les démarches administratives. ECAB® a complètement changé mon travail et je
+                            peux me concentrer sur les tâches qui me plaisent le plus grâce à cette solution
+                            tout-en-un.</span>
+                        <div class="icon-div"
+                            style="position: relative; height: 0; width: 100%; padding: 0; padding-bottom: 60px;">
+                            <img class="icon-img" src="/assets/images/five_star.png">
+                        </div>
+                    </div>
+                    <div class="namebox"> <img alt src="/assets/images/person1.png" style="width:100px;">
+                        <div class="name">
+                            <h5 class="authorName">Mr Benis Karim</h5>
+                            <p>Gérant de société de Transport VTC</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="testimonial_lt">
+                    <div class="text1">
+                        <span>Nous étions débordés et en manque de personnel pendant de longs mois avant de découvrir le
+                            logiciel ECAB®. Un grand merci à toute l’équipe qui a su nous accompagner dans la prise en
+                            main de cet outil qui a changé notre activité !</span>
+                        <div class="icon-div"
+                            style="position: relative; height: 0; width: 100%; padding: 0; padding-bottom: 60px;">
+                            <img class="icon-img" src="/assets/images/five_star.png">
+                        </div>
+                    </div>
+                    <div class="namebox"> <img alt src="/assets/images/person3.png" style="width:100px;">
+                        <div class="name">
+                            <h5 class="authorName">Mme Julie Frenandez,</h5>
+                            <p>Présidente de société de transport handicapé</p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div id="message1" class="container-fluid message-area2" style="margin-top: 70px;">
+                <div class="bg-color"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-12" style="display: flex; justify-content:center">
+                            <div class="buttons-holder">
+                                <a href="/demo" class style="color:black !important;">
+                                    <h4>Êtes-vous prêt ?</h4>
+                                </a>
+                                <a href="/contact" class="ybtn ybtn-accent-color ybtn-header-color contact_us">COMMENCER
+                                    MAINTENANT</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="more-features" class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row-title">Our Promise</div>
+                    <div class="row-subtitle">Your satisfaction is guaranteed. Indeed.</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-4">
+                    <div class="mfeature-box">
+                        <div class="mfeature-icon">
+                            <i class="htfy htfy-trophy"></i>
+                        </div>
+                        <div class="mfeature-title">%99.9 Uptime</div>
+                        <div class="mfeature-details">Mauris at libero sed justo pretium maximus ac non ex. Donec sit
+                            amet ultrices dolo.</div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="mfeature-box">
+                        <div class="mfeature-icon">
+                            <i class="htfy htfy-like"></i>
+                        </div>
+                        <div class="mfeature-title">Money Back Guarantee</div>
+                        <div class="mfeature-details">Mauris at libero sed justo pretium maximus ac non ex. Donec sit
+                            amet ultrices dolo.</div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="mfeature-box">
+                        <div class="mfeature-icon">
+                            <i class="htfy htfy-cogwheel"></i>
+                        </div>
+                        <div class="mfeature-title">Best Support</div>
+                        <div class="mfeature-details">Mauris at libero sed justo pretium maximus ac non ex. Donec sit
+                            amet ultrices dolo.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="message2" class="container-fluid message-area normal-bg boxed">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <div class="text-other-color1">Êtes-vous prêt ?</div>
+                    <div class="text-other-color2">créer un compte, ou nous contacter.</div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="buttons-holder">
+                        <a href="/register" class="ybtn ybtn-accent-color">Create Your Account</a><a href="/contact"
+                            class="ybtn ybtn-white ybtn-shadow">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="main-body-holder" class="container-fluid">
+        <section id="main-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 main-content">
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
+        $(document).ready(function () {
+
+            $('.autoplay').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                autoplay: true,
+                arrows: true,
+                autoplaySpeed: 2000,
+            });
+
+            $('ul.tabs li').click(function () {
+                var tab_id = $(this).attr('data-tab');
+
+                $('ul.tabs li').removeClass('current');
+                $('.tab-content').removeClass('current');
+
+                $(this).addClass('current');
+                $("#" + tab_id).addClass('current');
+            });
+
+            function initSlider() {
+                const clientSlides = document.querySelectorAll(".client-testimonial-box");
+                const dots = document.querySelectorAll(".dot");
+
+                function removeActiveSlide() {
+                    clientSlides.forEach((item) => {
+                        item.classList.remove("active");
+                    });
+                }
+
+                function removeActiveDots() {
+                    dots.forEach((item) => {
+                        item.classList.remove("active");
+                    });
+                }
+                let index = 1;
+                dots.forEach((item) => {
+                    item.addEventListener("click", (e) => {
+                        removeActiveSlide();
+                        removeActiveDots();
+                        index = e.target.dataset.value;
+                        const activeSlide = document.querySelector(`.client-testimonial-box-${e.target.dataset.value}`);
+                        activeSlide.classList.add("active");
+                        item.classList.add("active");
+                    });
+                });
+                setInterval(loop, 5000);
+
+                function loop() {
+                    index++;
+                    if (index > 3) index = 1;
+                    removeActiveDots();
+                    removeActiveSlide();
+                    document.querySelector(`.client-testimonial-box-${index}`).classList.add("active");
+                    document.querySelector(`.dot-${index}`).classList.add("active");
+                }
+            }
+            initSlider();
+
+            // $('#testmonialBlock').slick({
+            //     slidesToShow: 3,
+            //     slidesToScroll: 1,
+            //     arrows: true,
+            //     autoplaySpeed: 2000,
+            // });
+        });
+    </script>
+    <div id="eucookie">
+        <div>En poursuivant votre navigation sur ce site, vous acceptez l'utilisation de vos données personnelles par
+            des
+            <a href="/cookie-policy">cookies </a>, <a href="/privacy-policy" target="__blank">En savoir plus</a> ou
+            cliquez sur le bouton pour accepter <a id="seteucookie" class="btn btn-badge"
+                style="padding: 1px 12px">Accepter</a>
+        </div>
+    </div>
+    <div class="outer custom_outer">
+        <img src="/assets/images/chat.gif">
+    </div>
+    <div class="tabs-area-img" style="margin-bottom: 0px">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 custom_mytitle">
+                    <div class="custom_quality_title_bar">
+                        <h2 style="font-size: 21px;">ILS NOUS FONT CONFIANCE</h2>
+                    </div>
+                </div>
+                <div class="col-md-8 marquee-block" style="height:85px">
+                    <ul class="logo-bar marquee-inner to-left">
+                        <span>
+                            <li class><img class="logo-bar-img foter logoCenter footerCarusol"
+                                    src="/assets/images/partner1.png" alt></li>
+                            <li class><img class="logo-bar-img foter logoCenter footerCarusol"
+                                    src="/assets/images/partner5.png" alt></li>
+                            <li class><img class="logo-bar-img foter logoCenter footerCarusol"
+                                    src="/assets/images/partner4.png" alt></li>
+
+
+                        </span>
+
+
+
+
+
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer" class="container-fluid">
+        <div class="row footer_first_row">
+            <div class="container" style="padding:30px 6px 10px">
+                <div class="col-xs-12 col-sm-4 col-md-3">
+                    <div id="first_column_footer">
+                        <div class="footer_logo"
+                            style="width: 200px;height: 0px;padding: 55px !important;border-bottom: 1px solid #fff !important;">
+                        </div>
+                        <div class="ff-text">
+                            <p>Ecab @ 2016 Tous droits réservés.</p>
+                        </div>
+                        <img style="position: absolute;position: absolute;
+left: 88%;
+top: 152px;
+width: 25px;" src="/assets/images/white_lock.png" title="BusinessHelp Logo" alt="BusinessHelp Logo">
+                        <h3 class="secureCheckOut">Paiement Sécurisé</h3>
+                        <p style="margin-bottom: 0px;">Nous utilisons un système de sécurité SSL crypté pour garantir
+                            que les informations relatives à votre carte de crédit sont protégées à 100 %.</p>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-3">
+                    <div class="footer-menu-holder">
+                        <h4>INFORMATIONS</h4>
+                        <ul class="footer-menu links">
+                            <li menuItemName="1" id="Primary_Navbar-1">
+                                <a class="bg-hover" href="">
+                                    Accueil
+                                </a>
+                            </li>
+                            <li menuItemName="133" class id="Primary_Navbar-133"> <a href="/features">
+                                    Features
+                                </a>
+                            </li>
+                            <li menuItemName="159" class id="Primary_Navbar-159"><a href="/demo">
+                                    Demo
+                                </a>
+                            </li>
+                            <li menuItemName="185" class id="Primary_Navbar-185"><a href="/prices">
+                                    Prices
+                                </a>
+                            </li>
+                            <li menuItemName="186" class id="Primary_Navbar-186">
+                                <a href="/documentation">
+                                    Documentation
+                                </a>
+                            </li>
+                            <li menuItemName="186" class id="Primary_Navbar-186">
+                                <a href="/faq">
+                                    FAQ
+                                </a>
+                            </li>
+                            <li menuItemName="186" class id="Primary_Navbar-186">
+                                <a href="/contact">
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-3">
+                    <div class="footer-menu-holder">
+                        <h4>LIENS UTILES</h4>
+                        <ul class="footer-menu usefull">
+                            <li menuitemname="Login" id="Primary_Login">
+                                <a class="bg-hover">
+                                    Affilication
+                                </a>
+                            </li>
+                            <li menuitemname="Register" class id="Primary_Register">
+                                <a href="/announcements">
+                                    Announcements
+                                </a>
+                            </li>
+                            <li menuitemname="Register" class id="Primary_Register">
+                                <a href>
+                                    Jobs
+                                </a>
+                            </li>
+                            <li menuitemname="Contact Us" class id="Primary_Navbar-Contact_Us">
+                                <a href="/maintenance">
+                                    Maintenance
+                                </a>
+                            </li>
+                            <li menuitemname="Support" class id="Primary_Navbar-Support">
+                                <a href="/support">
+                                    Support
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-3">
+                    <div class="footer-menu-holder">
+                        <h4>CONTACTS</h4>
+                        <div class="address-holder">
+                            <div class="phone">
+                                <i class="fas fa-phone"></i>
+                                01 84 25 37 39
+                            </div>
+                            <div class="phone">
+                                <img src="/assets/images/call-fax.png" alt style="margin: 0px 4px 0px -4px;">
+                                01 84 25 37 59
+                            </div>
+                            <div class="email"><i class="fas fa-envelope"></i> <a href="/cdn-cgi/l/email-protection"
+                                    class="__cf_email__"
+                                    data-cfemail="3950575f56795c5a585b175056">[email&#160;protected]</a></div>
+                            <img style="margin-bottom: -15px;"
+                                src="https://digitals.fr/templates/smartpad/asset/netsco/html/images/digitalsfr.png" alt
+                                width="260" tabindex="0">
+                            <img src="/assets/images/garantis.png" alt width="200" height="50" tabindex="0"
+                                style="margin: 5px auto;">
+                            <div class="address">
+                                <i class="fas fa-map-marker"></i>
+                                <div>
+                                    <span style="font-weight:600"> Adresse :</span>
+                                    40 Rue Alexandre Dumas <br />
+                                    75011 Paris
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="copyrightinner custom-center container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-2">
+                    <img style="height: 35px;margin-top: 5px;margin-left:40px" alt="Checkout Secure"
+                        src="/assets/images/icons-footer5.png">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-8">
+                <p>
+                    <a style="border-left: none;" href="/terms-of-service">Conditions d'utilisation</a>
+                    <a href="/refund-policy">Politique de remboursement</a>
+                    <a href="/privacy-policy">Politique de confidentialité</a>
+                    <a href="/dmca-report">Politique de vie privée</a>
+                </p>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-2">
+                <div class="social-menu-holder text-center">
+                    <ul class="social-menu">
+                        <img
+                            src="https://images.clickfunnels.com/47/1e14475b8241d3bc2807172be71604/XXX-removebg-preview.png" />
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="fullpage-overlay" class="hidden">
+        <div class="outer-wrapper">
+            <div class="inner-wrapper">
+                <img src="/assets/img/overlay-spinner.svg">
+                <br>
+                <span class="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="modal system-modal fade" id="modalAjax" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content panel-primary">
+                <div class="modal-header panel-heading">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                        <span class="sr-only">Fermer</span>
+                    </button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body panel-body">
+                    Chargement en cours...
+                </div>
+                <div class="modal-footer panel-footer">
+                    <div class="pull-left loader">
+                        <i class="fas fa-circle-notch fa-spin"></i>
+                        Chargement en cours...
+                    </div>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        Fermer
+                    </button>
+                    <button type="button" class="btn btn-primary modal-submit">
+                        Envoyer
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <form action="#" id="frmGeneratePassword" class="form-horizontal">
+        <div class="modal fade" id="modalGeneratePassword">
+            <div class="modal-dialog">
+                <div class="modal-content panel-primary">
+                    <div class="modal-header panel-heading">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">
+                            Générer un mot de passe
+                        </h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="alert alert-danger hidden" id="generatePwLengthError">
+                            Veuillez entrer un nombre entre 8 et 64 pour la longueur du mot de passe
+                        </div>
+                        <div class="form-group">
+                            <label for="generatePwLength" class="col-sm-4 control-label">Longueur du mot de
+                                passe</label>
+                            <div class="col-sm-8">
+                                <input type="number" min="8" max="64" value="12" step="1"
+                                    class="form-control input-inline input-inline-100" id="inputGeneratePasswordLength">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="generatePwOutput" class="col-sm-4 control-label">Mot de passe généré</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="inputGeneratePasswordOutput">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-8 col-sm-offset-4">
+                                <button type="submit" class="btn btn-default btn-sm">
+                                    <i class="fas fa-plus fa-fw"></i>
+                                    Générer un nouveau mot de passe
+                                </button>
+                                <button type="button" class="btn btn-default btn-sm copy-to-clipboard"
+                                    data-clipboard-target="#inputGeneratePasswordOutput">
+                                    <img src="/assets/img/clippy.svg" alt="Copy to clipboard" width="15">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">
+                            Fermer
+                        </button>
+                        <button type="button" class="btn btn-primary" id="btnGeneratePasswordInsert"
+                            data-clipboard-target="#inputGeneratePasswordOutput">
+                            Copier dans le presse-papiers et insérer
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="/assets/frontend/js/jquery.animateTyping.js"></script>
+    <script src="/assets/frontend/js/bootstrap-slider.min.js"></script>
+    <script src="/assets/frontend/js/slick.min.js"></script>
+    <script src="/assets/frontend/js/main.js"></script>
+    <script src="/assets/frontend/js/custom.js"></script>
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(document).on("click", "#seteucookie", function () {
+                $("#eucookie").hide();
+            });
+        });
+    </script>
+    <style>
+        .floating-form input,
+        .floating-form select,
+        .floating-form-2 input,
+        .floating-form-2 select {
+            background: white !important;
+        }
+
+        .floating-form input[type='text'],
+        .floating-form-2 input[type='text'] {
+            height: 40px;
+        }
+
+        .custom-cross-icon {
+            background-color: #fff;
+            border-radius: 50%;
+            color: #ea0707;
+            display: inline;
+        }
+
+        .floating-form-2 {
+            max-width: 410px;
+            border: 1px solid #ddd;
+            position: fixed;
+            left: -167%;
+            right: 12px;
+            z-index: 999999;
+            background: linear-gradient(to bottom, #fafdff 0%, #e8f2f9 100%);
+            width: 100%;
+            top: 0;
+            min-height: 492px;
+            max-height: 650px;
+            /* padding: 10px 20px; */
+            margin: auto;
+        }
+
+        .floating-form-2 .custom_client_other1 {
+            padding: 0px 20px;
+        }
+
+        .floating-form-2 .custom_contact_body-2 {
+            padding: 0px 20px;
+        }
+
+        .floating-form-2 .btn-successs,
+        .floating-form .btn-successs {
+            border-radius: 6px;
+            color: #fff !important;
+            font-size: 14px !important;
+            font-weight: bold !important;
+            padding: 8px 20px !important;
+            margin-top: 2px !important;
+            height: auto;
+
+            background-color: #00B22D;
+            background-image: -o-linear-gradient(to bottom, #35c350 0%, #03b525 100%);
+            background-image: -moz-linear-gradient(to bottom, #35c350 0%, #03b525 100%);
+            background-image: -ms-linear-gradient(to bottom, #35c350 0%, #03b525 100%);
+            background-image: -webkit-linear-gradient(to bottom, #35c350 0%, #03b525 100%);
+            background-image: linear-gradient(to bottom, #35c350 0%, #03b525 100%);
+            border: 1px solid #FEFEFE !important;
+            box-shadow: 0 1px 0 #00B22D inset !important;
+        }
+
+        .floating-form-2 .btn-successs {
+            background-color: #FF7C07;
+            background-image: -o-linear-gradient(to bottom, rgb(255, 157, 10) 0%, #FF7902 100%);
+            background-image: -moz-linear-gradient(to bottom, rgb(255, 157, 10) 0%, #FF7902 100%);
+            background-image: -ms-linear-gradient(to bottom, rgb(255, 157, 10) 0%, #FF7902 100%);
+            background-image: -webkit-linear-gradient(to bottom, rgb(255, 157, 10) 0%, #FF7902 100%);
+            background-image: linear-gradient(to bottom, rgb(255, 157, 10) 0%, #FF7902 100%);
+            border: 1px solid #FEFEFE !important;
+            box-shadow: 0 1px 0 #FC8213 inset !important;
+        }
+
+        .floating-form-2 .btn-successs:hover {
+            background-color: #F89741;
+            background-image: -o-linear-gradient(to bottom, rgb(255, 157, 10) 0%, #FAA050 100%);
+            background-image: -moz-linear-gradient(to bottom, rgb(255, 157, 10) 0%, #FAA050 100%);
+            background-image: -ms-linear-gradient(to bottom, rgb(255, 157, 10) 0%, #FAA050 100%);
+            background-image: -webkit-linear-gradient(to bottom, rgb(255, 157, 10) 0%, #FAA050 100%);
+            background-image: linear-gradient(to bottom, rgb(255, 157, 10) 0%, #FAA050 100%);
+            color: #fff;
+            box-shadow: 0 1px 0 #ff9600 inset;
+        }
+
+        .floating-form .alert,
+        .floating-form-2 .alert {
+            border: 1px solid #999 !important;
+            color: #000 !important;
+            /* margin-bottom: 10px !important; */
+            font-size: 11px !important;
+            padding: 6px 10px;
+            line-height: 20px;
+        }
+
+        .floating-form-2 h4 {
+            font-size: 18px;
+        }
+
+        .floating-form .col-xs-4,
+        .floating-form-2 .col-xs-4 {
+            width: 37.33333%;
+        }
+
+        @media screen and (-webkit-min-device-pixel-ratio:0) {
+
+            .floating-form select.form-control,
+            .floating-form-2 select.form-control,
+            .assistance-form select.form-control {
+                -webkit-appearance: menulist-button;
+                -moz-appearance: menulist-button;
+                line-height: 40px !important;
+                padding: 6px 0 !important;
+                height: 40px !important;
+                margin-top: 0px;
+            }
+
+            .floating-form,
+            .floating-form-2 {
+                padding-bottom: 13px !important;
+            }
+        }
+
+        .floating-form .form-group,
+        .floating-form-2 .form-group {
+            margin-bottom: 6px !important;
+            overflow: hidden;
+        }
+
+        .floating-form .col-xs-12,
+        .floating-form .col-xs-6,
+        .floating-form-2 .col-xs-6,
+        .floating-form-2 .col-xs-12,
+        .floating-form .col-xs-4,
+        .floating-form-2 .col-xs-4 {
+            padding-left: 2px;
+            padding-right: 2px;
+        }
+
+        .visiable .contact-opener-2 {
+            width: 100%;
+            left: 0;
+        }
+
+        .demande_cta {
+            position: fixed;
+            left: 0;
+            z-index: 999;
+            top: 179px;
+            cursor: pointer;
+            width: 75px;
+
+        }
+
+        .visiable .contact-opener,
+        .visiable .contact-opener-2 {
+            display: none;
+        }
+
+        .floating-form-3-header {
+            left: 0px;
+            right: 0px;
+            padding: 21px 0px 13px;
+            color: #fff;
+            margin-top: -12px;
+            width: 408px;
+            color: #fff;
+            text-shadow: 1px 1px 1px rgb(0 0 0 / 43%);
+            cursor: pointer;
+            border-radius: 5px 5px 0 0;
+            background: linear-gradient(to bottom, #44c0e5 0%, #35add1 39%, #0d85a8 100%) !important;
+            font-size: 16px;
+            font-weight: bold;
+            width: 100%;
+            text-align: center;
+        }
+
+        a.close-btn.closee-btn,
+        a.close-btn-2.closee-btn {
+            right: 2px !important;
+            top: 3px !important;
+        }
+
+        .close-btn,
+        .close-btn-2,
+        .close-btn-3,
+        .close-btn-4,
+        .close-btn-5 {
+            color: #5cb85c;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            font-size: 18px;
+            position: absolute;
+            right: -1px;
+            top: -8px;
+        }
+
+        .close-btn-2 {
+            top: 0px;
+        }
+
+        .contact_body .closee-btn {
+            color: #5cb85c !important;
+        }
+
+        form.form-stacked label.control-label {
+            font-weight: 400 !important;
+        }
+
+        form.form-stacked {
+            margin-top: -10px !important;
+        }
+
+        form.form-stacked .form-group.col-md-2 {
+            width: 25%;
+        }
+
+        form.form-stacked {
+            text-align: left;
+        }
+
+        form.form-stacked .form-group.col-md-2 {
+            width: 100%;
+        }
+
+        form.form-stacked .form-group.col-md-2,
+        form.form-stacked .form-group.col-md-3 {
+            width: 18.7%;
+        }
+
+        form.form-stacked label.control-label {
+            font-weight: 400 !important;
+        }
+
+        form.form-stacked {
+            margin-top: -10px !important;
+        }
+
+        div#supp_other1 .fa {
+            color: #0d4f78;
+        }
+
+        #client_other1 .input-group-addon {
+            padding: 6px 6px !important;
+        }
+
+        .input-group-addon {
+            background-image: linear-gradient(to bottom, #fbfbfb 0%, #ececec 39%, #ececec 39%, #cecece 100%)
+        }
+
+        p.test,
+        p.fote-text {
+            text-align: center;
+            font-size: 11px;
+            color: #000;
+            padding: 10px;
+        }
+
+        p.test {
+            margin-bottom: -10px;
+            /*margin-top:10px;*/
+        }
+
+        .testimonial-block {
+            margin-top: 20px;
+        }
+
+        .input-group .form-control {
+            border: 1px solid #41BDE2;
+        }
+
+        .floating-form select.form-control,
+        .floating-form-2 select.form-control {
+            padding: 6px 0 !important;
+            height: 40px !important;
+            margin: 0 !important;
+        }
+
+        .floating-form textarea.form-control {
+            height: 65px;
+        }
+
+        #client_other1 .form-control {
+            padding: 6px 6px !important;
+        }
+
+        input.w3-orange.orangehs {
+            background: linear-gradient(#ff6666, #cc0000) !important;
+            /*#2ba1d3*/
+        }
+
+        .showClass {
+            background: rgb(235, 244, 255) none repeat scroll 0% 0% !important;
+            left: 0%;
+            right: 100%;
+        }
+
+        .currentClass {
+            background: rgb(235, 244, 255) !important;
+        }
+
+        .dNone {
+            display: none !important;
+        }
+
+        /* Right pannel */
+        .floating-form {
+            width: initial !important;
+        }
+
+        .floating-form {
+            /*contact form wrapper*/
+            max-width: 410px;
+            padding: 10px 20px 10px 20px;
+            border: 1px solid #ddd;
+            right: 10px;
+            position: fixed;
+            /*Form position fixed*/
+            z-index: 999999;
+            background: linear-gradient(to bottom, #fafdff 0%, #e8f2f9 100%);
+            width: 100%;
+            min-height: 667px;
+            /*top: 190px;*/
+            height: 467px;
+        }
+
+        .floating-form .btn-successs:hover {
+            background-color: #35c350;
+            background-image: -o-linear-gradient(to bottom, #03b525 0%, #35c350 100%);
+            background-image: -moz-linear-gradient(to bottom, #03b525 0%, #35c350 100%);
+            background-image: -ms-linear-gradient(to bottom, #03b525 0%, #35c350 100%);
+            background-image: -webkit-linear-gradient(to bottom, #03b525 0%, #35c350 100%);
+            background-image: linear-gradient(to bottom, #03b525 0%, #35c350 100%);
+        }
+
+        .floating-form-2-header {
+            /* position: absolute; */
+            /* top: -10px; */
+            left: 0px;
+            right: 0px;
+            padding: 12px 0px 13px;
+            color: #fff;
+            margin-left: -20px;
+            margin-top: -12px;
+            width: 410px !important;
+            color: #fff;
+            text-shadow: 1px 1px 1px rgb(0 0 0 / 43%);
+            cursor: pointer;
+            border-radius: 5px 5px 0 0;
+            background: linear-gradient(to bottom, #44c0e5 0%, #35add1 39%, #0d85a8 100%) !important;
+            font-size: 16px;
+            font-weight: bold;
+            width: 100%;
+            text-align: center;
+        }
+
+        .contact-opener {
+            margin-top: 47px !important;
+            /* left: -40px !important; */
+            left: -84px !important;
+        }
+
+        .contact-opener {
+            margin-top: 63px;
+        }
+
+        .contact-opener {
+            background: none !important;
+            border: 0 !important;
+        }
+
+        .contact-opener-2 {
+            position: absolute;
+            left: -230px;
+        }
+
+        .right-opener {
+            top: 19.6%;
+        }
+
+        .contact-opener::before {
+            position: absolute;
+            content: "";
+            background: url("https://digitals.fr/templates/chistel602/asset/netsco/html/images/123.gif");
+            width: 85px;
+            height: 80px;
+            opacity: 1;
+        }
+
+        .contact-opener,
+        .contact-opener-3 {
+            position: absolute;
+            left: -273px;
+        }
+
+        div#ccinputform td a {
+            width: 142px !important;
+            display: block;
+            position: absolute;
+            right: 13px;
+        }
+
+        input#cccvv {
+            width: 145px !important;
+        }
+
+        .contact-opener,
+        .contact-opener-3 {
+            position: absolute;
+            left: -295px;
+        }
+
+        .con-img {
+            width: 80px;
+        }
+
+        img.con-img {
+            /* transform: rotate(90deg); */
+            opacity: 1;
+            position: relative;
+        }
+
+        img.con-img:hover {
+            opacity: 0.5;
+        }
+
+        .defaultRight {
+            border: 2px solid rgb(47, 176, 231);
+            background: rgb(235, 244, 255) none repeat scroll 0% 0% !important;
+            right: -412px;
+        }
+
+        .showRight {
+            top: 0px;
+            border: 2px solid rgb(47, 176, 231);
+            background: rgb(235, 244, 255) none repeat scroll 0% 0% !important;
+            right: 0px;
+        }
+
+        div.outer {
+            position: relative;
+            height: 24px;
+        }
+
+        div.outer img {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+
+        .outer {
+            display: block !important;
+        }
+
+        div.custom_outer img {
+            width: 5%;
+            position: fixed;
+            bottom: 1%;
+            right: 0%;
+            z-index: 100000000;
+        }
+
+        /* cookie bar css */
+        /* .seteucookie {
+        padding: 1px 12px !important;
+    } */
+    </style>
+    <script type="text/javascript" language="javascript">
+        $(document).ready(function () {
+
+            $(document).on("click", ".demande_cta", function () {
+                $(".floating-form-2").removeClass('currentClass');
+                $(".floating-form-2").addClass('visiable, showClass');
+                $(".contact-opener-2").addClass('dNone');
+                console.log("clicked");
+                // $(".floating-form-2").css('background:rgb(235, 244, 255) none repeat scroll 0% 0% !important; left: -72%;');
+            });
+
+            $(document).on("click", ".close-btn-2", function () {
+                $(".floating-form-2").addClass('currentClass');
+                $(".floating-form-2").removeClass('visiable, showClass');
+                $(".contact-opener-2").removeClass('dNone');
+                // $(".floating-form-2").css('background:rgb(235, 244, 255) none repeat scroll 0% 0% !important; left: -72%;');
+            });
+
+            $(document).on("click", ".con-img", function () {
+                $(".floating-form").removeClass('defaultRight');
+                $(".floating-form-2").addClass('visiable, showRight');
+                $(".contact-opener").addClass('dNone');
+            });
+            $(document).on("click", ".closee-btn", function () {
+                $(".floating-form-2").removeClass('visiable, showRight');
+                $(".contact-opener").removeClass('dNone');
+                $(".floating-form").addClass('defaultRight');
+            });
+        })
+    </script>
+    <script>
+        // floating Contact form
+        var _scroll = true,
+            _timer = false,
+            _floatbox = $("#contact_form"),
+            _floatbox_opener = $(".contact-opener, .close-btn,.apply_job");
+        // _floatbox_opener = $(".contact-opener, .closee-btn");
+        if (!_floatbox.hasClass('visiable'))
+            _floatbox.css({
+                right: "-412px"
+            });
+        else
+            _floatbox.css({
+                right: "-357px"
+            });
+        _floatbox_opener.click(function () {
+            if (_floatbox.hasClass('visiable')) {
+                _floatbox.animate({
+                    "right": "-412px"
+                }, {
+                    duration: 300
+                }).removeClass('visiable');
+            } else {
+                _floatbox.animate({
+                    "right": "0px"
+                }, {
+                    duration: 300
+                }).addClass('visiable');
+            }
+        });
+
+        // floating Contact form2
+        var _scroll2 = true,
+            _timer2 = false,
+            _floatbox2 = $("#contact_form_2"),
+            _floatbox_opener2 = $(".contact-opener-2, .close-btn-2,.apply_job_2");
+        // _floatbox_opener = $(".contact-opener, .closee-btn");
+        if (!_floatbox2.hasClass('visiable'))
+            _floatbox2.css({
+                left: "-167%"
+            });
+        else
+            _floatbox2.css({
+                left: "-168%"
+            });
+        _floatbox_opener2.click(function () {
+            if (_floatbox2.hasClass('visiable')) {
+                _floatbox2.animate({
+                    "left": "-167%"
+                }, {
+                    duration: 300
+                }).removeClass('visiable');
+
+            } else {
+                _floatbox2.animate({
+                    "left": "0%"
+                "right": "100%"
+                }, {
+                    duration: 300
+                }).addClass('visiable');
+
+            }
+        });
+    </script>
+</body>
+
+</html>
